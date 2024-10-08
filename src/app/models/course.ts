@@ -1,5 +1,4 @@
 
-
 export interface Course {
     courseCode: string,
     subjectCode: string,

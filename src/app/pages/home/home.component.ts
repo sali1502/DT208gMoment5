@@ -24,6 +24,7 @@ export class HomeComponent {
     this.welcomeImage = this.images[this.currentImageIndex];
   }
 
+  // Funktion för att växla mellan bilder
   changeImage(): void {
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
     this.welcomeImage = this.images[this.currentImageIndex];

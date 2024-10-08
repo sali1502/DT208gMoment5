@@ -1,6 +1,6 @@
 
 /* Inputformulär för filtrering av kurser */
-.course-form {
+.filter-form {
     background-color: rgb(255, 255, 255);
     margin: 2vh auto;
     font-size: 0.9em;
@@ -14,16 +14,37 @@
 }
 
 input[type=text] {
-    width: 40%;
+    width: 42%;
     padding: 1px;
     border-radius: 4px;
     margin-top: 1vh;
     margin-bottom: 1vh;
 }
 
-.label {
+.filter-form label {
     font-family: "Roboto", sans-serif;
     font-size: 0.9em;
+    line-height: 1em;
+}
+
+/* Rullgardinsmeny */
+ .subject-menu {
+    background-color: rgb(255, 255, 255);
+    margin: 2vh auto;
+    font-size: 0.9em;
+    text-align: left;
+    max-width: 700px;
+    padding: 2vh 4vw;
+    border-radius: 4px;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.subject-menu label {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    line-height: 2em;
 }
 
 /* Tabell för utskrift av kurser */
@@ -90,7 +111,7 @@ a {
 /* MEDIA QUERIES */
 
 /* Media queries kurstabell för liten skärm */
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 600px) {
 
     /* Döljer rubrik för kurskod och kursplan (th) */
     th.code,
