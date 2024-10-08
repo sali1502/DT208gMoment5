@@ -1,0 +1,106 @@
+
+/* Inputformulär för filtrering av kurser */
+.course-form {
+    background-color: rgb(255, 255, 255);
+    margin: 2vh auto;
+    font-size: 0.9em;
+    text-align: left;
+    max-width: 700px;
+    padding: 2vh 4vw;
+    border-radius: 4px;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 1px;
+    border-radius: 4px;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.label {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+}
+
+/* Tabell för utskrift av kurser */
+.course-table {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 0 auto;
+    font-size: 0.9em;
+    text-align: left;
+    max-width: 700px;
+    padding-top: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.course-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.course-table td {
+    padding: 1vh 1vw;
+    color: #333;
+}
+
+p {
+    margin-top: 2vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: black;
+    text-align: left;
+}
+
+/* Felmeddelanden */
+.errorMsg {
+    color: rgb(255, 0, 0);
+    margin: 0 auto 0 auto;
+    font-size: 0.8em;
+    text-align: left;
+    max-width: 700px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border-radius: 4px;
+    width: 100%;
+}
+
+#click:hover {
+    cursor: pointer;
+    color: #487272;
+}
+
+#click:active {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #487272;
+}
+
+/* MEDIA QUERIES */
+
+/* Media queries kurstabell för liten skärm */
+@media only screen and (max-width: 690px) {
+
+    /* Döljer rubrik för kurskod och kursplan (th) */
+    th.code,
+    th.subject {
+        display: none;
+    }
+
+    /* Döljer motsvarande td-celler */
+    td:nth-child(1),
+    td:nth-child(4) {
+        display: none;
+    }
+}

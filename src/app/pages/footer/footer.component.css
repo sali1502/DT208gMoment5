@@ -3,11 +3,12 @@ footer {
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    height: 20px;
+    height: 10px;
+    margin-top: auto;
 }
 
 footer p {
     padding-top: 2vh;
     color: white;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
