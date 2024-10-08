@@ -8,24 +8,21 @@ body {
     width: 100%;
     background-color: #487272;
     font-family: "Roboto", sans-serif;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 .container {
     max-width: 1170px;
-    min-width: 300px;
     width: 100%;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 main {
-    max-width: 1170px;
     width: 100%;
     background-color: rgb(252, 252, 252);
     text-align: center;
-    padding: 1em;
-    height: 80vh;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+    height: 85vh;
 }
 
 h1 {
@@ -40,5 +37,6 @@ h1 {
 
 p {
     font-size: 0.9em;
-    line-height: 1.5em;
+    line-height: 1.2em;
+    margin: 0 auto;
 }

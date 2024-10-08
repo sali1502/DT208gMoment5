@@ -1,7 +1,13 @@
 footer {
+    max-width: 1170px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     height: 20px;
+}
+
+footer p {
+    padding-top: 2vh;
     color: white;
     font-size: 0.9em;
 }
