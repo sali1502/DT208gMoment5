@@ -1,3 +1,4 @@
+<!-- DT208G TypeScript, Moment 5 - Projekt. Åsa Lindskog sali1502@student.miun.se -->
 
 <!-- Inputfält för filtrering av kurser -->
 <div class="filter-form">
@@ -14,11 +15,13 @@
     </select>
 </div>
 
-<!-- Informationstext medan kurser laddas -->
-<div *ngIf="loading" class="loading">Laddar kurser...</div>
+<!-- Felmeddelade för felaktig input i inputfält för filtrering -->
+<div *ngIf="errorMessage">
+    {{ errorMessage }}
+</div>
 
-<!-- Errormeddelande om kurser inte laddas eller hittas -->
-<div *ngIf="!loading && filteredCourses.length === 0" class="errorMsg"></div>
+<!-- Information om att kurser laddas -->
+<div *ngIf="loading" class="loading">Laddar kurser...</div>
 
 <!-- Tabell för utskrift och sortering av kurskod, kursnamn, poäng och ämne -->
 <table *ngIf="!loading && filteredCourses.length > 0" class="course-table">
