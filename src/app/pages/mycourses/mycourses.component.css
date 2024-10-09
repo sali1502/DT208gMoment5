@@ -1,0 +1,65 @@
+/* DT208G TypeScript, Moment 5 - Projekt. Åsa Lindskog sali1502@student.miun.se */
+
+/* Tabell för utskrift av ramschema */
+.course-table {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 0 auto;
+    font-size: 0.9em;
+    text-align: left;
+    max-width: 700px;
+    padding-top: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.course-table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.course-table td {
+    padding: 1vh 1vw;
+    color: #333;
+}
+
+p {
+    margin-top: 2vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    line-height: 1em;
+    color: black;
+    text-align: left;
+}
+
+button {
+    background-color: #487272;
+    color: rgb(255, 255, 255);
+    min-width: 10px;
+    margin-top: 0.5vh;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-size: 0.8em;
+}
+
+/* MEDIA QUERIES */
+
+/* Media queries ramschema för liten skärm */
+@media only screen and (max-width: 600px) {
+
+    /* Döljer rubrik för kurskod, ämne och kursplan (th) */
+    th.code,
+    th.subject,
+    th.syllabus {
+        display: none;
+    }
+
+    /* Döljer motsvarande td-celler */
+    td:nth-child(1),
+    td:nth-child(4),
+    td:nth-child(5) {
+        display: none;
+    }
+}

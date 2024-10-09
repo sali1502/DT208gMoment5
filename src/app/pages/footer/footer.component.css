@@ -13,3 +13,10 @@ footer p {
     font-size: 0.8em;
     line-height: 1.5em;
 }
+
+footer a {
+    padding-top: 2vh;
+    color: white;
+    font-size: 0.8em;
+    line-height: 1.5em;
+}

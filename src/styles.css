@@ -48,6 +48,15 @@ h1 {
     padding-bottom: 2vh;
 }
 
+h2 {
+    color: #487272;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 2vh;
+}
+
 p {
     font-size: 0.9em;
     line-height: 1.2em;

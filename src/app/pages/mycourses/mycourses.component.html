@@ -1,0 +1,28 @@
+<!-- DT208G TypeScript, Moment 5 - Projekt. Åsa Lindskog sali1502@student.miun.se -->
+
+<h2>Mitt Ramschema</h2>
+
+<table class="course-table">
+    <thead>
+        <tr>
+            <th class="code">Kod</th>
+            <th class="courseName">Kursnamn</th>
+            <th class="points">Poäng</th>
+            <th class="subject">Ämne</th>
+            <th class="syllabus">Kursplan</th>
+            <th class="deleteCourse">Radera</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let course of courses">
+            <td>{{ course.courseCode }}</td>
+            <td>{{ course.courseName }}</td>
+            <td>{{ course.points }}</td>
+            <td>{{ course.subject }}</td>
+            <td><a [href]="course.syllabus" target="_blank">Kursplan</a>
+            <td>
+                <button (click)="deleteCourse(course.courseCode)">Radera</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
