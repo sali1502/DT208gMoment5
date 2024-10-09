@@ -15,7 +15,7 @@ import { CoursesService } from '../../services/courses.service';
 })
 
 export class CoursesComponent {
-  // Properties
+  // Egenskaper
   courses: Course[] = [];
   filteredCourses: Course[] = [];
   subjects: string[] = [];
@@ -24,6 +24,7 @@ export class CoursesComponent {
   loading: boolean = true;
   errorMessage: string = "";
   isAscending: boolean = true;
+  notificationMessage: string = "";
 
   constructor(private coursesService: CoursesService) { }
 
@@ -128,4 +129,21 @@ export class CoursesComponent {
     this.isAscending = !this.isAscending;
   }
 
+  // Lägg till och spara kurser i Local Storage 
+  addCourseToLocalStorage(course: Course): void {
+    let savedCourses = localStorage.getItem("savedCourses");
+
+    let courses: Course[] = savedCourses ? JSON.parse(savedCourses) : [];
+
+    // Finns kursen redan i Local Storage?
+    const courseExists = courses.some(savedCourse => savedCourse.courseCode === course.courseCode);
+
+    if (!courseExists) {
+      courses.push(course);
+      localStorage.setItem("savedCourses", JSON.stringify(courses));
+      this.notificationMessage = `${course.courseName} har lagts till i ditt ramschema.`;
+    } else {
+      this.notificationMessage = `${course.courseName} finns redan i ditt ramschema.`;
+    }
+  }
 }

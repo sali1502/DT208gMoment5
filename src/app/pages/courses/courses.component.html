@@ -15,6 +15,10 @@
     </select>
 </div>
 
+<div *ngIf="notificationMessage" class="notificationMessage">
+    {{ notificationMessage }}
+</div>
+
 <!-- Felmeddelade för filtrering av kurser-->
 <div *ngIf="errorMessage">
     {{ errorMessage }}
@@ -37,6 +41,7 @@
             <th id="click" class="points" (click)="sortPoints()">Poäng</th>
             <th id="click" class="subject" (click)="sortSubject()">Ämne</th>
             <th class="syllabus"> Kursplan</th>
+            <th class="addCourse"> Spara</th>
         </tr>
     </thead>
     <tbody>
@@ -46,7 +51,7 @@
             <td>{{ course.points }}</td>
             <td>{{ course.subject }}</td>
             <td><a [href]="course.syllabus" target="_blank">Kursplan</a>
-            </td>
+            <td><button (click)="addCourseToLocalStorage(course)">Spara</button></td>
         </tr>
     </tbody>
 </table>

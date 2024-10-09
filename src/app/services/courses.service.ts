@@ -14,9 +14,10 @@ export class CoursesService {
 
   constructor(private http: HttpClient) { }
 
-  // Metoder
+  // Metod för att hämta kurser
   getCourses(): Observable<Course[]> {
     return this.http.get<Course[]>(this.url);
   }
 
 }
+
