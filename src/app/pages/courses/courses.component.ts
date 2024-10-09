@@ -141,9 +141,9 @@ export class CoursesComponent {
     if (!courseExists) {
       courses.push(course);
       localStorage.setItem("savedCourses", JSON.stringify(courses));
-      this.notificationMessage = `${course.courseName} har lagts till i ditt ramschema`;
+      this.notificationMessage = `${course.courseName} har lagts till i ramschema.`;
     } else {
-      this.notificationMessage = `${course.courseName} finns redan i ditt ramschema`;
+      this.notificationMessage = `${course.courseName} finns redan i ramschema.`;
     }
   }
 }

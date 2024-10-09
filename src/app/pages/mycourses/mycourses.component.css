@@ -1,5 +1,18 @@
 /* DT208G TypeScript, Moment 5 - Projekt. Åsa Lindskog sali1502@student.miun.se */
 
+.scheduele-heading {
+    background-color: rgb(255, 255, 255);
+    margin: 2vh auto;
+    font-size: 0.9em;
+    text-align: left;
+    max-width: 700px;
+    padding: 2vh 4vw;
+    border-radius: 4px;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* Tabell för utskrift av ramschema */
 .course-table {
     background-color: rgb(255, 255, 255);
