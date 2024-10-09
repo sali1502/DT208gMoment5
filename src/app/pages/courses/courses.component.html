@@ -6,7 +6,7 @@
     <input type="text" id="filter" [(ngModel)]="inputValue" (input)="filterCourses()">
 </div>
 
-<!-- Rullgardinsmeny för val av ämne -->
+<!-- Rullgardinsmeny med ämnen -->
 <div class="subject-menu">
     <label for="subject">Filtrera efter ämne:</label><br>
     <select id="subject" [(ngModel)]="selectedSubject" (change)="filterBySubject()">
@@ -15,9 +15,14 @@
     </select>
 </div>
 
-<!-- Felmeddelade för felaktig input i inputfält för filtrering -->
+<!-- Felmeddelade för filtrering av kurser-->
 <div *ngIf="errorMessage">
     {{ errorMessage }}
+</div>
+
+<!-- Skriver ut antal kurser som visas på skärmen efter filtrering jämfört med alla kurser -->
+<div class="displayedCourses">
+    <p>Visar {{ filteredCourses.length }} av {{ courses.length }} kurser</p>
 </div>
 
 <!-- Information om att kurser laddas -->

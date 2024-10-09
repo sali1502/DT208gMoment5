@@ -42,7 +42,7 @@ export class CoursesComponent {
     this.subjects = Array.from(subjectSet);
   }
 
-  // Metod för att filtrera kurser baserat på inputfält samt rullgardinsmeny
+  // Metod för att filtrera kurser baserat på inputfält och rullgardinsmeny
   filterCourses(): void {
     this.filteredCourses = this.courses.filter((course) => {
       const matchesInput = course.courseName.toLowerCase().includes(this.inputValue.toLowerCase()) ||
@@ -52,7 +52,7 @@ export class CoursesComponent {
       return matchesInput && matchesSubject;
     });
 
-    // Kontroll om inget resultat hittades med felmeddelande
+    // Kontroll för filtrering med felmeddelande
     if (this.filteredCourses.length === 0 && this.inputValue) {
       this.errorMessage = 'Inga kurser kunde hittas...';
     } else {
@@ -64,7 +64,7 @@ export class CoursesComponent {
     this.filterCourses();
   }
 
-  // Metod för att sortera efter kurskod, växling mellan stigande och fallande ordning efter varje klick
+  // Metod för att sortera efter kurskod, stigande och fallande ordning
   sortCode(): void {
     this.filteredCourses.sort((a, b) => {
       if (this.isAscending) {
@@ -80,7 +80,7 @@ export class CoursesComponent {
     this.isAscending = !this.isAscending;
   }
 
-  // Metod för att sortera efter kursnamn
+  // Metod för att sortera efter kursnamn, stigande och fallande ordning
   sortCourseName(): void {
     this.filteredCourses.sort((a, b) => {
       if (this.isAscending) {
@@ -96,7 +96,7 @@ export class CoursesComponent {
     this.isAscending = !this.isAscending;
   }
 
-  // Metod för att sortera efter poäng
+  // Metod för att sortera efter poäng, stigande och fallande ordning
   sortPoints(): void {
     this.filteredCourses.sort((n1, n2) => {
       if (this.isAscending) {
@@ -112,7 +112,7 @@ export class CoursesComponent {
     this.isAscending = !this.isAscending;
   }
 
-  // Metod för att sortera efter ämne
+  // Metod för att sortera efter ämne, stigande och fallande ordning
   sortSubject(): void {
     this.filteredCourses.sort((a, b) => {
       if (this.isAscending) {
