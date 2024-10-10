@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 
-// Klass med array, konstruktor och metod för att växla bild vid knapptryck 
+/* Klass med array, konstruktor och metod */ 
 export class HomeComponent {
   images: string[] = [
     "images/university.jpg",

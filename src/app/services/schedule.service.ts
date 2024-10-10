@@ -9,7 +9,7 @@ export class ScheduleService {
 
   constructor() { }
 
-  // Metod för att hämta kurser i ramschema från Local Storage
+  // Metod för att hämta kurser till ramschema från Local Storage
   getCoursesFromLocalStorage(): Course[] {
     const savedCourses = localStorage.getItem(this.storageKey);
     return savedCourses ? JSON.parse(savedCourses) : [];

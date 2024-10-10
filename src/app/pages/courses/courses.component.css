@@ -28,7 +28,7 @@ input[type=text] {
     line-height: 1em;
 }
 
-/* Rullgardinsmeny */
+/* Rullgardinsmeny för filtrering av ämne */
 .subject-menu {
     background-color: rgb(255, 255, 255);
     margin: 2vh auto;
@@ -80,6 +80,7 @@ p {
     text-align: left;
 }
 
+/* Klickbar rubrik i tabell */
 #click:hover {
     cursor: pointer;
     color: #487272;
@@ -94,7 +95,7 @@ a {
     color: #487272;
 }
 
-/* Antal kurser som visas på skärmen jämfört med samtliga kurser */
+/* Antal kurser som visas på skärmen jämfört med alla kurser */
 .displayedCourses {
     background-color: rgb(255, 255, 255);
     margin: 0 auto 0 auto;
@@ -122,6 +123,7 @@ a {
     width: 100%;
 }
 
+/* Knapp för att lägga till kurs */
 button {
     background-color: #487272;
     color: rgb(255, 255, 255);
@@ -136,7 +138,7 @@ button {
 
 /* MEDIA QUERIES */
 
-/* Media queries kurstabell för liten skärm */
+/* Kurstabell för liten skärm */
 @media only screen and (max-width: 600px) {
 
     /* Döljer rubrik för kurskod, ämne och kursplan (th) */

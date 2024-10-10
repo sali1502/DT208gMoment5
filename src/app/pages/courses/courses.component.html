@@ -1,12 +1,12 @@
 <!-- DT208G TypeScript, Moment 5 - Projekt. Åsa Lindskog sali1502@student.miun.se -->
 
-<!-- Inputfält för filtrering av kurser -->
+<!-- Inputfält för filtrering av kursnamn och kurskod -->
 <div class="filter-form">
     <label for="filter">Filtrera kurser:</label><br>
     <input type="text" id="filter" [(ngModel)]="inputValue" (input)="filterCourses()">
 </div>
 
-<!-- Rullgardinsmeny med ämnen -->
+<!-- Rullgardinsmeny för filtrering av kursämnen -->
 <div class="subject-menu">
     <label for="subject">Ämne:</label><br>
     <select id="subject" [(ngModel)]="selectedSubject" (change)="filterBySubject()">
@@ -15,11 +15,12 @@
     </select>
 </div>
 
+<!-- Meddelande att kurs lagts till i ramschema (eller att kurs redan finns i ramschema) -->
 <div *ngIf="notificationMessage" class="notificationMessage">
     {{ notificationMessage }}
 </div>
 
-<!-- Felmeddelade för filtrering av kurser-->
+<!-- Felmeddelade att kurser ej kan hittas vid filtrering -->
 <div *ngIf="errorMessage">
     {{ errorMessage }}
 </div>
@@ -32,7 +33,7 @@
 <!-- Information om att kurser laddas -->
 <div *ngIf="loading" class="loading">Laddar kurser...</div>
 
-<!-- Tabell för utskrift och sortering av kurskod, kursnamn, poäng och ämne -->
+<!-- Tabell för utskrift av kurser från api - sortering av kurskod, kursnamn, poäng och ämne -->
 <table *ngIf="!loading && filteredCourses.length > 0" class="course-table">
     <thead>
         <tr>
@@ -51,6 +52,7 @@
             <td>{{ course.points }}</td>
             <td>{{ course.subject }}</td>
             <td><a [href]="course.syllabus" target="_blank">Kursplan</a>
+                <!-- Knapp för att lägga till kurser i Local Storage -->
             <td><button (click)="addCourseToLocalStorage(course)">Spara</button></td>
         </tr>
     </tbody>

@@ -4,7 +4,6 @@ import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
-import { CoursesComponent } from './pages/courses/courses.component';
 
 @Component({
   selector: 'app-root',

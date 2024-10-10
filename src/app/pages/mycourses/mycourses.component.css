@@ -27,19 +27,6 @@
     width: 100%;
 }
 
-.total-points {
-    background-color: rgb(255, 255, 255);
-    margin: 0 auto 0 auto;
-    font-size: 0.9em;
-    text-align: left;
-    max-width: 700px;
-    padding-top: 4vh;
-    padding-left: 4vw;
-    padding-right: 4vw;
-    border-radius: 4px;
-    width: 100%;
-}
-
 .course-table tr {
     border-bottom: 1px solid #ddd;
 }
@@ -58,6 +45,7 @@ p {
     text-align: left;
 }
 
+/* Raderaknapp */
 button {
     background-color: #487272;
     color: rgb(255, 255, 255);
@@ -69,6 +57,21 @@ button {
     padding-left: 4px;
     font-size: 0.8em;
 }
+
+/* Sammanlagda högskolepoäng */
+.total-points {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 0 auto;
+    font-size: 0.9em;
+    text-align: left;
+    max-width: 700px;
+    padding-top: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border-radius: 4px;
+    width: 100%;
+}
+
 
 /* MEDIA QUERIES */
 

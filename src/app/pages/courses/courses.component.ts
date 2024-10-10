@@ -37,13 +37,13 @@ export class CoursesComponent {
     });
   }
 
-  // Hämta ämne från kurslistan
+  // Metod för att ta ut ämne från kurslistan
   extractSubjects(): void {
     const subjectSet = new Set(this.courses.map(course => course.subject));
     this.subjects = Array.from(subjectSet);
   }
 
-  // Metod för att filtrera kurser baserat på inputfält och rullgardinsmeny
+  // Metod för att filtrera kurser baserat på inputfält (kurskod och kursnamn) och val i rullgardinsmeny (ämne)
   filterCourses(): void {
     this.filteredCourses = this.courses.filter((course) => {
       const matchesInput = course.courseName.toLowerCase().includes(this.inputValue.toLowerCase()) ||
@@ -53,7 +53,7 @@ export class CoursesComponent {
       return matchesInput && matchesSubject;
     });
 
-    // Kontroll för filtrering med felmeddelande
+    // Kontroll av inputfält med felmeddelande
     if (this.filteredCourses.length === 0 && this.inputValue) {
       this.errorMessage = 'Inga kurser kunde hittas...';
     } else {

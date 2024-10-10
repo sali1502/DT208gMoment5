@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 
 export class CoursesService {
-  // Properties
+  // Egenskaper
   url: string = "https://matdah.github.io/DT208G---Programmering-i-TypeScript/Moment%205%20-%20Projekt/miun_courses.json";
 
   constructor(private http: HttpClient) { }
