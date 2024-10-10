@@ -12,6 +12,7 @@ import { Course } from '../../models/course';
 })
 export class MycoursesComponent implements OnInit {
   courses: Course[] = [];
+  totalPoints: number = 0;
 
   constructor(private scheduleService: ScheduleService) { }
 
@@ -22,8 +23,13 @@ export class MycoursesComponent implements OnInit {
   // Hämta kurser från Local Storage
   loadCourses(): void {
     this.courses = this.scheduleService.getCoursesFromLocalStorage();
+    this.calculatedTotalPoints();
   }
 
+  // Räkna ut summa av poäng i ramschema
+  calculatedTotalPoints(): void {
+    this.totalPoints = this.courses.reduce((acc, course) => acc + course.points, 0);
+  }
   // Radera kurser från Local Storage
   deleteCourse(courseCode: string): void {
     this.scheduleService.deleteCourseFromLocalStorage(courseCode);
