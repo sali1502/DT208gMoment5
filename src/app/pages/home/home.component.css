@@ -33,8 +33,8 @@ button {
 h2 {
     color: #487272;
     font-size: 1.5em;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     text-align: center;
 }
 
@@ -42,4 +42,22 @@ p {
     text-align: center;
     font-size: 1em;
     line-height: 2em;
+}
+
+/* Media queries för liten skärm */
+@media only screen and (max-width: 600px) {
+
+    h2 {
+        color: #487272;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.5em;
+        margin-left: 6vw;
+        margin-right: 12vw;
+    }
 }
