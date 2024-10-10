@@ -19,7 +19,7 @@ Det går att se sammanräknat antal högskolepoäng för de kurser som visas i r
 
 ### Komponenter
 Komponenter har gjorts för header och footer. I headern finns länkar till navigationsmenyn.<br>
-Komponenter har även gjorts för undersidorna startsidan, kurser och ramschema och sidan "not-found".<br>
+Komponenter har även gjorts för undersidorna startsidan, kurser, ramschema och sidan "not-found".<br>
 
 ### Interface
 Ett interface har gjorts (Courses) för kursdata som hämtas från det externa API:et.
@@ -31,11 +31,11 @@ ScheduleService hämtar data från localStorage genom metoden getCoursesFromLoca
 Här finns även metoden deleteCourseFromLocalStorage för att radera kurser från ramschemat.<br>
 
 ### Responsivitet
-Webbplatsen är responsiv. För att tabellerna på sidan kurser och ramschema ska fungera på en en liten skärm har fälten för rubrikerna kod, poäng och kursplan dolts för mindre skärmar.br>
+Webbplatsen är responsiv. För att tabellerna på sidorna kurser och ramschema ska fungera på en en liten skärm har fälten för rubrikerna kod, poäng och kursplan dolts för mindre skärmar.br>
 
 ### Publicering
 Webbplatsen är publicerad på Netlify.
-
+https://sali1502dt208gprojekt.netlify.app
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
