@@ -45,6 +45,11 @@ p {
     text-align: left;
 }
 
+a {
+    text-decoration: none;
+    color: #487272;
+}
+
 /* Raderaknapp */
 button {
     background-color: #487272;
@@ -58,6 +63,20 @@ button {
     font-size: 0.8em;
 }
 
+/* Antal visade kurser i ramschemat */
+.course-count {
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto 0 auto;
+    font-size: 0.9em;
+    text-align: left;
+    max-width: 700px;
+    padding-top: 0vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    border-radius: 4px;
+    width: 100%;
+}
+
 /* Sammanlagda högskolepoäng */
 .total-points {
     background-color: rgb(255, 255, 255);
@@ -65,13 +84,12 @@ button {
     font-size: 0.9em;
     text-align: left;
     max-width: 700px;
-    padding-top: 4vh;
+    padding-top: 0vh;
     padding-left: 4vw;
     padding-right: 4vw;
     border-radius: 4px;
     width: 100%;
 }
-
 
 /* MEDIA QUERIES */
 
