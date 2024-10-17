@@ -37,6 +37,10 @@ Webbplatsen är responsiv. För att tabellerna på sidorna kurser och ramschema 
 Webbplatsen är publicerad på Netlify.
 https://sali1502dt208gprojekt.netlify.app
 
+### Validering
+Webbplatsen är validerad för HTML och CSS W3C valideringstjänster samt testad i webbläsarna Opera, Firefox och ChromeDev.<br>
+Testning har även skett i Wave och i Lighthouse.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
 
