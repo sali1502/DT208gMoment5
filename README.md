@@ -32,7 +32,7 @@ ScheduleService hämtar data från localStorage genom metoden getCoursesFromLoca
 Här finns även metoden deleteCourseFromLocalStorage för att radera kurser från ramschemat.<br>
 
 ### Responsivitet
-Webbplatsen är responsiv. För att tabellerna på sidorna kurser och ramschema ska fungera på en liten skärm har fälten för rubrikerna kod, poäng och kursplan dolts för mindre skärmar.br>
+Webbplatsen är responsiv. För att tabellerna på sidorna kurser och ramschema ska fungera på en liten skärm har fälten för rubrikerna kod, poäng och kursplan dolts för mindre skärmar.<br>
 
 ### Publicering
 Webbplatsen är publicerad på Netlify.
