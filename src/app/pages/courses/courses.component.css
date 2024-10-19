@@ -48,6 +48,15 @@ input[type=text] {
     line-height: 2em;
 }
 
+.loading {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    font-size: 1.2em;
+    max-width: 700px;
+    min-height: 200px;
+  }
+
 /* Tabell för utskrift av kurser */
 .course-table {
     background-color: rgb(255, 255, 255);
