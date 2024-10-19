@@ -7,7 +7,7 @@ På startsidan presenteras lärosätet med ett bildspel som användaren kan klic
 Det  finns även en informationstext om lärosätet.<br>
 
 ### Kurser
-På sidan för kurser läses kurser ut från ett externt API till en tabell.<br>
+På sidan för kurser läses kurser ut från en JSON-fil till en tabell.<br>
 Det går att sortera kurser på kurskod, kursnamn, poäng och ämne i stigande och fallande ordning genom att klicka på rubrikerna i tabellen.<br>
 Det går att filtrera kurser på kurskod och kursnamn genom skriva in text i ett inputfält, och det går att filtrera kurser på ämne genom att välja ett ämne i en rullgardinsmeny.<br>
 Det går även att se antal kurser som visas på skärmen jämfört med samtliga kurser.<br>
@@ -15,32 +15,32 @@ I varje tabellrad finns en knapp för att spara en kurs till localStorage för a
 
 ### Ramschema
 På sidan för ramschema läses de sparade kurserna ut från localStorage och visas i en tabell.<br>
-Det går att se sammanräknat antal högskolepoäng för de kurser som visas i ramschemat och det går att radera kurser från ramschemat.<br>
+En räknare visar antalet kurser i ramschemat och en annan räknare visar det sammanräknade antalet högskolepoäng för kurserna i ramschemat.<br>
+Det går också att radera kurser.<br>
 
 ### Komponenter
 Komponenter har gjorts för header och footer. I headern finns länkar till navigationsmenyn.<br>
 Komponenter har även gjorts för undersidorna startsidan, kurser, ramschema och sidan "not-found".<br>
 
 ### Interface
-Ett interface har gjorts (Courses) för kursdata som hämtas från det externa API:et.
+Ett interface har gjorts (Courses) för kursdata som hämtas från JSON-filen.
 
 ### Services
 Två services har gjorts:<br>
-CoursesService hämtar data med HttpClient genom metoden getCourses().<br>
+CoursesService hämtar JSON-data med HttpClient genom metoden getCourses().<br>
 ScheduleService hämtar data från localStorage genom metoden getCoursesFromLocalStorage.<br>
 Här finns även metoden deleteCourseFromLocalStorage för att radera kurser från ramschemat.<br>
 
 ### Responsivitet
-Webbplatsen är responsiv. För att tabellerna på sidorna kurser och ramschema ska fungera på en en liten skärm har fälten för rubrikerna kod, poäng och kursplan dolts för mindre skärmar.br>
+Webbplatsen är responsiv. För att tabellerna på sidorna kurser och ramschema ska fungera på en liten skärm har fälten för rubrikerna kod, poäng och kursplan dolts för mindre skärmar.br>
 
 ### Publicering
 Webbplatsen är publicerad på Netlify.
 https://sali1502dt208gprojekt.netlify.app
 
 ### Validering
-Webbplatsen är validerad för HTML och CSS W3C valideringstjänster samt testad i webbläsarna Opera, Firefox och ChromeDev.<br>
-Testning har även skett i Wave och i Lighthouse.
-
+Webbplatsen är validerad för HTML och CSS i W3C valideringstjänster samt testad i webbläsarna Opera, Firefox och Chrome.<br>
+Testning har även skett i Wave och Lighthouse.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.6.
 
