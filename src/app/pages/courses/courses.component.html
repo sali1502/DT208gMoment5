@@ -33,7 +33,7 @@
 <!-- Information om att kurser laddas -->
 <div *ngIf="loading" class="loading">Laddar kurser...</div>
 
-<!-- Tabell för utskrift av kurser från api - sortering av kurskod, kursnamn, poäng och ämne -->
+<!-- Tabell för utskrift av kurser från JSON-fil - sortering av kurskod, kursnamn, poäng och ämne -->
 <table *ngIf="!loading && filteredCourses.length > 0" class="course-table">
     <thead>
         <tr>
